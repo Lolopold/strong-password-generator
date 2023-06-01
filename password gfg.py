@@ -3,6 +3,6 @@ password = "ABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890abcdefghijklmnopqrstuvwxyz!@#$%^
 if length_password = int(input("length should be greater be greater than 6 "))
         print("Enter the length of the password")
 else:
-    print("password csnnot be generated")
+    print("password cannot be generated")
 a = "".join(random.sample(password,length_password))
 print(f"Your password is {a}")
