@@ -1,8 +1,8 @@
 import random
-password = "ABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890abcdefghijklmnopqrstuvwxyz!@#$%^&*()_+}{:"
-if length_password = int(input("length should be greater be greater than 6 "))
-        print("Enter the length of the password")
+list_of_chr = "ABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890abcdefghijklmnopqrstuvwxyz!@#$%^&*()_+}{:"
+length_password = int(input("Length of password should be greater be greater than 6:		 "))
+random_password = "".join(random.sample(list_of_chr,k = length_password))
+if length_password > 6:
+	print(f"Your password is \n{random_password}")
 else:
-    print("password cannot be generated")
-a = "".join(random.sample(password,length_password))
-print(f"Your password is {a}")
+	print("password cannot be generated")
